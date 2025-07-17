@@ -1,4 +1,4 @@
-### What is Neural Network   
+### What is a Neural Network   
 A neural network consists of:  
 - **Input Layer**: contains data set features
 - **Hidden Layer**: a neural network can contain any numbers of hidden layers
@@ -10,13 +10,15 @@ A neural network consists of:
 It is one type of machine learning, and basically it has some input x and wants it to learn a function mapping to some output y.  
 
 #### Neural Network Architecture
-- Standard Neural Network / Feedforward Neural Network / Dense Neural Network
+- Feedforward Neural Networks (FNN) / Dense Neural Network / Standard Neural Network
     - A sequence of layers where each layer is fully connected to the next, and data flows in one direction, from input to output.
-- Convolutional Neural Network (CNN)
+- Convolutional Neural Networks **(CNN)**
     - Process image data
-- Recurrent Neural Network (RNN)
+- Recurrent Neural Networks **(RNN)**
     - Process one-dimensional sequence data, e.g. audio to text transcipt, and language translation
-- Hybrid Neural Network 
+- Attention-Based Networks **(usually refers to Transformer)**
+- Graph Neural Networks **(GNN)** 
+- Hybrid Neural Networks 
     - Process image and radar info, e.g. autonomous driving  
 ![Neural Network Architecture](pics/NN%20Architectures.JPG)
 
