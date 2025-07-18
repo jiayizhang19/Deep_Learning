@@ -28,7 +28,7 @@ print(inputs)
     ])
 }
 ```
-### 2. Passing the inputs through the model  
+### 2. Passing the inputs through the model  -- Inference
 The values we get as output from our model don’t necessarily make sense by themselves. Those are not probabilities but **logits**, the raw, unnormalized scores outputted by the last layer of the model.
 ```
 from transformers import AutoModelForSequenceClassification
