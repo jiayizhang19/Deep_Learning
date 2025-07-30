@@ -14,6 +14,8 @@ raw_inputs = [
     "I've been waiting for a HuggingFace course my whole life.",
     "I hate this so much!",
 ]
+# padding is used to make all input sentences the same length, as tensors need to be rectangular
+# truncation is used to truncate sentenses that are longer than the model can handle
 inputs = tokenizer(raw_inputs, padding=True, truncation=True, return_tensors="pt")
 print(inputs)
 
@@ -31,6 +33,7 @@ print(inputs)
 ### 2. Passing the inputs through the model  -- Inference
 The values we get as output from our model don’t necessarily make sense by themselves. Those are not probabilities but **logits**, the raw, unnormalized scores outputted by the last layer of the model.
 ```
+# There are many different architectures available designed to tackle a specific task, for example, AutoModel, BertModel, AutoModelForCausalLM etc.
 from transformers import AutoModelForSequenceClassification
 
 checkpoint = "distilbert-base-uncased-finetuned-sst-2-english"
